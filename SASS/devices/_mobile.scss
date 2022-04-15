@@ -1,0 +1,186 @@
+header {
+  display: none;
+}
+
+main {
+  %paddingSection {
+    padding: 36px 5%;
+  }
+
+  .background {
+    height: 100vh;
+    @include backgroundImg(url('../img/water.jpg'));
+
+    .container {
+      height: 100%;
+      padding: 12%;
+      @include flexBox (column nowrap, flex-end, flex-start);
+      text-align: left;
+
+      h1 {
+        font-size: 38px;
+        color: $colorHeading1;
+      }
+      p {
+        color: white;
+      }
+    }
+  }
+
+  #typography {
+    @extend %paddingSection;
+
+    h1 {
+      color: $colorSectionFont;
+    }
+    h2 {
+      color: $colorHeading2;
+    }
+    h3 {
+      color: $colorHeading3;
+    }
+    h4 {
+      color: $colorHeading4;
+    }
+
+    h1, h2, h3, h4 {
+      padding-bottom: 18px;
+    }
+
+    p {
+      padding-bottom: 24px;
+    }
+
+    blockquote {
+      @extend p;
+      padding-left: 24px;
+    }
+
+    .grid {
+      @include flexBox(row wrap, space-between, flex-start, 5px 5px);
+      
+      .item {
+        width: 31%;
+
+        img {
+          width: 100%;
+          border-radius: 10%;
+        }
+      }
+    }
+  }
+
+  #buttons {
+    .container {
+      @extend %paddingSection;
+
+      h1 {
+        color: $colorSectionFont;
+        padding-bottom: 18px;
+      }
+
+      [class^="btn-"] {
+        padding: 12px;
+        border: none;
+        border-radius: 10%;
+        color: white;
+        font-family: $fontFamily;
+        font-size: 18px;
+      }
+      .btn-default {
+        background-color: $colorFont;
+      }
+      .btn-cool {
+        background-color: $colorSectionFont;
+      }
+      .btn-hot {
+        background-color: $colorHeading4;
+      }
+      .btn-awesome{
+        background-color: $colorHeading2;
+      }
+    }
+  }
+
+  #lists {
+    @extend %paddingSection;
+
+    h1 {
+      color: $colorSectionFont;
+      padding-bottom: 18px;
+    }
+
+    .container {
+
+      h2 {
+        color: $colorHeading2;
+        padding-bottom: 18px;
+      }
+
+      ul {
+        padding-left: 8%;
+      }
+
+      ol {
+        padding-left: 8%;
+      }
+
+      article {
+        padding-bottom: 38px;
+      }
+    }
+
+  }
+
+  #media {
+    @extend %paddingSection;
+
+    .container {
+
+      h1 {
+        color: $colorSectionFont;
+        padding-bottom: 18px;
+        border-bottom: 1px solid gainsboro;
+      }
+        .media {
+          list-style: none;
+
+          li {
+            list-style: none;
+            padding: 12px 0;
+
+            a {
+              text-decoration: none;
+
+              img {
+                width: 80px;
+                height: 80px;
+                padding: 0 10px 10px 0;
+                float: left;
+              }
+
+              .head {
+                font-size: 18px;
+                color: $colorSectionFont;
+              }
+
+              p {
+                color: $colorFont;
+                border-bottom: 1px solid  gainsboro;
+                padding-bottom: 12px;
+                font-size: 16px;
+              }
+            }
+          }
+      }
+    }
+  }
+
+  #tables {
+    display: none;
+  }
+}
+
+footer {
+  display: none;
+}

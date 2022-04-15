@@ -1,0 +1,23 @@
+@mixin backgroundImg (
+  $background: red,
+  $backgroundSize: cover,
+  $backgroundPosition: center,
+  $backgroundRepeat: no-repeat,
+) {
+  background: $background;
+  background-size: $backgroundSize;
+  background-position: $backgroundPosition;
+  background-repeat: $backgroundRepeat;
+}
+@mixin flexBox (
+  $flexFlow: column nowrap,
+  $justifyContent: center,
+  $align-items: center,
+  $gap: 0px 0px,
+) {
+  display: flex;
+  flex-flow: $flexFlow;
+  justify-content: $justifyContent;
+  align-items: $align-items;
+  gap: $gap;
+}

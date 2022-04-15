@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab|Merriweather|Josefin+Slab|Oswald|Bree+Serif");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Merriweather", Helvetica, sans-serif;
+  background-color: #EEE8D6;
+}
+
+header {
+  display: none;
+}
+
+main #typography, main #buttons .container, main #lists, main #media {
+  padding: 36px 5%;
+}
+
+main .background {
+  height: 100vh;
+  background: url("../img/water.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main .background .container {
+  height: 100%;
+  padding: 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 0px 0px;
+  text-align: left;
+}
+
+main .background .container h1 {
+  font-size: 38px;
+  color: #FFBA00;
+}
+
+main .background .container p, main .background .container #typography blockquote, main #typography .background .container blockquote {
+  color: white;
+}
+
+main #typography h1 {
+  color: #0076A3;
+}
+
+main #typography h2 {
+  color: #6D73C2;
+}
+
+main #typography h3 {
+  color: #548C27;
+}
+
+main #typography h4 {
+  color: #D14348;
+}
+
+main #typography h1, main #typography h2, main #typography h3, main #typography h4 {
+  padding-bottom: 18px;
+}
+
+main #typography p, main #typography blockquote {
+  padding-bottom: 24px;
+}
+
+main #typography blockquote {
+  padding-left: 24px;
+}
+
+main #typography .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 5px 5px;
+}
+
+main #typography .grid .item {
+  width: 31%;
+}
+
+main #typography .grid .item img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+main #buttons .container h1 {
+  color: #0076A3;
+  padding-bottom: 18px;
+}
+
+main #buttons .container [class^="btn-"] {
+  padding: 12px;
+  border: none;
+  border-radius: 10%;
+  color: white;
+  font-family: "Merriweather", Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+main #buttons .container .btn-default {
+  background-color: #022933;
+}
+
+main #buttons .container .btn-cool {
+  background-color: #0076A3;
+}
+
+main #buttons .container .btn-hot {
+  background-color: #D14348;
+}
+
+main #buttons .container .btn-awesome {
+  background-color: #6D73C2;
+}
+
+main #lists h1 {
+  color: #0076A3;
+  padding-bottom: 18px;
+}
+
+main #lists .container h2 {
+  color: #6D73C2;
+  padding-bottom: 18px;
+}
+
+main #lists .container ul {
+  padding-left: 8%;
+}
+
+main #lists .container ol {
+  padding-left: 8%;
+}
+
+main #lists .container article {
+  padding-bottom: 38px;
+}
+
+main #media .container h1 {
+  color: #0076A3;
+  padding-bottom: 18px;
+  border-bottom: 1px solid gainsboro;
+}
+
+main #media .container .media {
+  list-style: none;
+}
+
+main #media .container .media li {
+  list-style: none;
+  padding: 12px 0;
+}
+
+main #media .container .media li a {
+  text-decoration: none;
+}
+
+main #media .container .media li a img {
+  width: 80px;
+  height: 80px;
+  padding: 0 10px 10px 0;
+  float: left;
+}
+
+main #media .container .media li a .head {
+  font-size: 18px;
+  color: #0076A3;
+}
+
+main #media .container .media li a p, main #media .container .media li a #typography blockquote, main #typography #media .container .media li a blockquote {
+  color: #022933;
+  border-bottom: 1px solid  gainsboro;
+  padding-bottom: 12px;
+  font-size: 16px;
+}
+
+main #tables {
+  display: none;
+}
+
+footer {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    display: block;
+  }
+  header nav .container {
+    background-color: #022933;
+  }
+  header nav .container .branding {
+    display: none;
+  }
+  header nav .container ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0px 0px;
+  }
+  header nav .container ul li {
+    height: 100%;
+  }
+  header nav .container ul li a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #EEE8D6;
+  }
+  main #tables {
+    padding: 36px 5%;
+  }
+  main #media .container .media .item a img {
+    width: 110px;
+    height: 110px;
+  }
+  main #tables {
+    display: block;
+  }
+  main #tables h1 {
+    color: #0076A3;
+    padding-bottom: 18px;
+  }
+  main #tables table {
+    width: 100%;
+  }
+  main #tables table * {
+    padding: 5px 0;
+    text-align: left;
+  }
+  main #tables table caption {
+    font-size: 24px;
+    font-weight: bolder;
+  }
+  main #tables table thead {
+    color: #EEE8D6;
+    background-color: #0076A3;
+    font-weight: bold;
+  }
+  main #tables table tbody tr:nth-child(even) {
+    background-color: #F39856;
+  }
+  main #tables table th {
+    padding-left: 10px;
+  }
+  footer {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
